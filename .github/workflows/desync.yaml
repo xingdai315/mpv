@@ -79,5 +79,5 @@ jobs:
           
       - uses: actions/upload-artifact@v4
         with:
-          name: mpv
-          path: mpv.tar.gz
+          name: mpv-git
+          path: ./artifact/
