@@ -76,9 +76,8 @@ jobs:
         if: ${{ failure() && steps.tests.outcome == 'failure' }}
         run: |
           cat ./build/meson-logs/testlog.txt
-  
-      - name: Save
+          
       - uses: actions/upload-artifact@v4
         with:
-          name: mpv-${{ matrix.target }}
-          path: mpv-git-*.zip
+          name: mpv
+          path: mpv-git.tar.gz
