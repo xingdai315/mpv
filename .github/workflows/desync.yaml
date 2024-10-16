@@ -67,6 +67,10 @@ jobs:
         run: |
           cat ./build/meson-logs/meson-log.txt
 
+      - name: Create pkg
+        run: |
+          tar -czvf mpv.tar.gz -C build
+
       - name: Run meson tests
         id: tests
         run: |
