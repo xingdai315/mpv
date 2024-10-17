@@ -69,7 +69,7 @@ jobs:
 
       - name: Create pkg
         run: |
-          tar -czvf mpv.tar.gz -C build
+          tar -czvf mpv.tar.gz -C build mpv
 
       - name: Run meson tests
         id: tests
